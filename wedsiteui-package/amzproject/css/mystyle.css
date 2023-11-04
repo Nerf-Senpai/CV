@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap');
+
+body{
+    font-family: "Source Sans Pro",sans-serif;
+}
+/* start header */
+header{
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(../assets/images/header.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+
+/* Start Navbar */
+.navbar{
+    background: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3));
+    padding: 20px 30px;
+}
+.navmenus{
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0.7));
+    padding: 5px 30px;
+}
+.menuitems{
+    color: #eee;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: color 1s;
+}
+.menuitems:hover{
+    color: #1a99e8;
+}
+.lines1,.lines2,.lines3{
+    width: 23px;
+    height: 3px;
+    margin: 5px;
+    transition: all 0.4s;
+}
+.changes .lines1{
+    transform: rotate(-45deg) translate(-5px,6px);
+}
+.changes .lines2{
+    opacity: 0;
+}
+.changes .lines3{
+    transform: rotate(45deg) translate(-5px,-6px);
+}
+
+/* ENd Navbar */
+/* Start Banner */
+.banners{
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%); 
+}
+.bannerheaders{
+animation-name: bnani;
+animation-duration: 2s;
+}
+.bannerparagraphs{
+animation-name: bnani;
+animation-duration: 2s;
+animation-delay: 0.5s;
+animation-fill-mode: backwards;
+}
+@keyframes bnani{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity:1;
+    }
+} 
+/* End Banner */
+/* End header */
+
+/* Start Mission Section */
+.missions{
+    background-color:darkslategray;
+}
+.underlines{
+    width: 150px;
+    border: 3px solid #eee;
+    margin: auto;
+}
+
+/* End Mission Section */
+/* Start Collection Section */
+.cardshadows{
+    box-shadow:5px 8px 20px #444;
+}
+.headings{
+    width: 70%;
+    background-color:#222;
+    font-size: 14px;
+    letter-spacing:1px;
+    cursor:pointer;
+    position:absolute;
+    top:70%;
+    right:0;
+    transition:all 0.5s;
+}
+headings:hover{
+    opacity:1;
+}
+/* End colletion Section */
+/* start gallery section */
+.darkunderlines{
+    width: 150px;
+    border: 3px solid #aaa;
+    margin: auto;
+}
+.gallarylists{
+    cursor:pointer;
+    color: #777;
+}
+.gallarylists.activeitems{
+    color:#06b7bd;
+}
+/* end gallayr section */
